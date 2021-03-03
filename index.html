@@ -1,102 +1,215 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!--Googlefont-->
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Hello, world!</title>
-</head>
+  </head>
+  <body>
+      <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <h2 class="logo"> <i class="fab fa-instagram"></i>Instagram</h2> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Instagram</a><i class="fa fa-instagram" aria-hidden="true"></i>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <a data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Create a new post</a>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Settings
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <nav class="nav nav-pills justify-content-center">
-        <a class="nav-item nav-link active" href="#threecolumn" data-toggle="tab"><i class="fa fa-th"
-                aria-hidden="true"></i></a>
-        <a class="nav-item nav-link" href="#onecolumn" data-toggle="tab"><i class="fa fa-square"
-                aria-hidden="true"></i></a>
-    </nav>
-
-
-
-
-    <div class="tab-content mt-3">
-        <div id="threecolumn" class="row no-pad tab-pane active">
-            <h1>3 column</h1>
-        </div>
-        <div id="onecolumn" class="row no-pad tab-pane">
-            <h1>1 column</h1>
-        </div>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+    
+ <div class="dropdown ml-auto">
+  <button type="button" class="btn btn-secondary bg-success ml-auto" data-toggle="modal" data-target="#Modal">
+Create a new post
+</button>
+ <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+ <i class="fas fa-cog" ></i>
+ </button>
+ <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+     <a class="dropdown-item" href="#">Action</a>
+     <a class="dropdown-item" href="#">Another action</a>
+     <a class="dropdown-item" href="#">Something else here</a>
+     <a class="dropdown-item border-top" href="#">Logout</a>
+ </div>
 </div>
 
+  </div>
+</nav>
+    <nav class="nav nav-pills justify-content-center">
+        <a class=" nav-item nav-link active " href="#threecolumn" data-toggle="tab"><i class="fa fa-th"
+                aria-hidden="true"></i></a>
+        <a class="nav-item nav-link" href="#onecolumn" data-toggle="tab"><i class="fa fa-square"
+                aria-hidden="true"></i></a> 
+                
+            
+    </nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<div class="tab-content mt-3 ">
+        <div id="threecolumn" class="row no-pad tab-pane active ">
+            <!-- <h1>3 column</h1> -->
+            <div class="container">
+              <div class="row row-cols-3">
+                <div class="col mb-1 px-0 ps-1"><img src="https://ximagen.com/images/2019/03/10/imagenes-bonitas.jpg" width="100%"
+                    height="100%" alt=""></div>
+                <div class="col mb-1 pe-0 ps-1"><img src="https://steamuserimages-a.akamaihd.net/ugc/927064011836731286/3AF4EF81513591D3FEA8D3EEDFD7384AD30C3FD3/" width="100%"
+                    height="100%" alt=""></div>
+                <div class="col mb-1 pe-0 ps-1"><img src="https://ximagen.com/images/2019/03/10/imagenes-bonitas.jpg" width="100%"
+                    height="100%" alt=""></div>
+                <div class="col mb-1 pe-0 ps-1"><img src="https://i.pinimg.com/originals/6b/40/75/6b4075666b86277b52902cc15208b70b.gif" width="100%"
+                    height="100%" alt=""></div>
+                <div class="col mb-1 pe-0 ps-1"><img src="https://i.pinimg.com/originals/bb/75/de/bb75de7104f6d9cfb984bd5177f7e5c5.jpg" width="100%"
+                    height="100%" alt=""></div>
+                <div class="col mb-1 pe-0 ps-1"><img src="https://ximagen.com/images/2019/03/10/imagenes-bonitas.jpg" width="100%"
+                    height="100%" alt=""></div>
+                <div class="col mb-1 pe-0 ps-1"><img src="https://i.pinimg.com/originals/01/33/f1/0133f1e76e04e3bd45ee37b0fc1ae904.gif" width="100%"
+                    height="100%" alt=""></div>
+                <div class="col mb-1 pe-0 ps-1"><img src="https://c4.wallpaperflare.com/wallpaper/334/195/653/espacio-naturaleza-nebulosas-planeta-wallpaper-preview.jpg" width="100%"
+                    height="100%" alt=""></div>
+                <div class="col mb-1 pe-0 ps-1"><img src="https://www.xtrafondos.com/descargar.php?id=4419&resolucion=2560x1440" width="100%"
+                    height="100%" alt=""></div>
+            
+              </div>
+            </div>
+        </div>
+        <div id="onecolumn" class="row no-pad tab-pane  ">
+          <div class="container bg-secondary">
+          
+    
+
+          <div class=" bg-white mx-auto border-0 my-4" style="max-width:600px;">
+            <div class="row mx-0 p-1">
+              <p class="text-start " style="width: 200px;"><strong>My first photo</strong></p> 
+              <p class="ml-auto text-end " style="width: 390px;"><strong>12/14</strong></p>
+            
+            </div>
+            <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59bbb29c5bafe878503c9872/husky-siberiano-bosque.jpg" class="img-fluid" alt="Responsive image">
+
+            <div class="card-body p-1">
+      
+                <h5 class="card-title m-0 pb-2 "><strong>23 likes</strong></h5>
+
+                <p class="card-text m-0 pb-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with
+                  <strong>#BreatheCode</strong></p>
+
+                <div class="row pr-3 mb-2">
+                  <i class="far fa-heart col-1 py-2"></i>
+                  <input class=" ml-auto col-8 border-0" type="text" placeholder="Comment...">
+                </div>
+            </div>
+        </div>
+
+        <div class=" bg-white mx-auto border-0 my-4" style="max-width:600px;">
+          <div class="row mx-0 p-1">
+            <p class="text-start " style="width: 200px;"><strong>My first photo</strong></p> 
+            <p class="ml-auto text-end " style="width: 390px;"><strong>12/14</strong></p>
+          
+          </div>
+          <img src="https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg" class="img-fluid" alt="Responsive image">
+
+          <div class="card-body p-1">
+    
+              <h5 class="card-title m-0 pb-2 "><strong>100 likes</strong></h5>
+
+              <p class="card-text m-0 pb-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with
+                <strong>#BreatheCode</strong></p>
+
+              <div class="row pr-3 mb-2">
+                <i class="far fa-heart col-1 py-2"></i>
+                <input class=" ml-auto col-8 border-0" type="text" placeholder="Comment...">
+              </div>
+          </div>
+      </div>
+      <div class=" bg-white mx-auto border-0 my-4" style="max-width:600px;">
+        <div class="row mx-0 p-1">
+          <p class="text-start " style="width: 200px;"><strong>My first photo</strong></p> 
+          <p class="ml-auto text-end " style="width: 390px;"><strong>12/14</strong></p>
+        
+        </div>
+        <img src="https://scx2.b-cdn.net/gfx/news/hires/2020/dog.jpg" class="img-fluid" alt="Responsive image">
+
+        <div class="card-body p-1">
+  
+            <h5 class="card-title m-0 pb-2 "><strong>23 likes</strong></h5>
+
+            <p class="card-text m-0 pb-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with
+              <strong>#BreatheCode</strong></p>
+
+            <div class="row pr-3 mb-2">
+              <i class="far fa-heart col-1 py-2"></i>
+              <input class=" ml-auto col-8 border-0" type="text" placeholder="Comment...">
+            </div>
+        </div>
+    </div>
+    <div class=" bg-white mx-auto border-0 my-4" style="max-width:600px;">
+      <div class="row mx-0 p-1">
+        <p class="text-start " style="width: 200px;"><strong>My first photo</strong></p> 
+        <p class="ml-auto text-end " style="width: 390px;"><strong>12/14</strong></p>
+      
+      </div>
+      <img src="https://www.aaha.org/contentassets/3c00345bcc2d430b9f471734e8417d75/2019-6-6-istock-460588321-osu-mean-dog-blog.jpg" class="img-fluid" alt="Responsive image">
+
+      <div class="card-body p-1 ">
+
+          <h5 class="card-title m-0 pb-2 "><strong>500 likes</strong></h5>
+
+          <p class="card-text m-0 pb-2">This is my first photo of the feed. this is a multi line comment for testing purposes. I am learning to code with
+            <strong>#BreatheCode</strong></p>
+
+          <div class="row pr-3 mb-2">
+            <i class="far fa-heart col-1 py-2"></i>
+            <input class=" ml-auto col-8 border-0" type="text" placeholder="Comment...">
+          </div>
+      </div>
+  </div>
+
+
+          </div>
+        </div>
+    </div>
+
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Create a new post</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <i class="fas fa-camera">   </i>     <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary">Publish</button>
+      </div>
+      </div>
+  </div>
+  </div>
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
+
